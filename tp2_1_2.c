@@ -10,7 +10,7 @@ int main(){
     ptr = &vt[0];
 
     for(i = 0; i<N; i++){
-        ptr[i] = 1 + rand() %100;
+        *ptr = 1 + rand() %100;
         printf("%.2f , ", *(ptr + i));
         ptr + i;
         
