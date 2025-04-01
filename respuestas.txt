@@ -1,0 +1,7 @@
+¿Puede ver el archivo tp2_1_2.c? ¿Por qué?
+No pude ver el archivo , porque estaba en una rama distinta a la que se creo el archivo.
+¿Qué diferencias nota?
+
+¿Qué nota?
+Que se juntaron los archivos de ambas ramas.
+
