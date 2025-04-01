@@ -6,9 +6,13 @@
 int main(){
     srand(time(NULL));
     int i;
-    double vt[N];
+    double vt[N] , *ptr;
+    ptr = &vt[0];
+
     for(i = 0; i<N; i++){
-        vt[i]=1+ rand() %100;
-        printf("%.2f , ", vt[i]);
+        ptr[i] = 1 + rand() %100;
+        printf("%.2f , ", *(ptr + i));
+        ptr + i;
+        
     }
 }
