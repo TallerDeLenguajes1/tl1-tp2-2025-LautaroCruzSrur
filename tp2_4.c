@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 #define MIN 2015
 
 struct
@@ -8,9 +9,9 @@ struct
     int cantidad_nucleos;
     char *tipo_cpu;
 } typedef compu;
-void listaPC(compu* compus);
-void pcVieja(compu* compus);
-void pcMasterRaise(compu* compus);
+void listarPCs(compu* compus , int cantidad);
+void mostrarMasVieja(compu* compus, int cantidad);
+void mostrarMasVeloz(compu* compus, int cantidad);
 
 
 int main(){
@@ -30,7 +31,7 @@ int main(){
     mostrarMasVieja(compus, cantidad);
     mostrarMasVeloz(compus, cantidad);
 }
-void listaPC(compu* compus, int cantidad){
+void listarPCs(compu* compus, int cantidad){
     printf("Lista de pc: \n");
     for (int i = 0; i < cantidad; i++)
     {
@@ -43,7 +44,7 @@ void listaPC(compu* compus, int cantidad){
     
 
 };
-void pcVieja(compu* compus, int cantidad){
+void mostrarMasVieja(compu* compus, int cantidad){
     int indicePcVieja = 0;
     for (int i = 0; i < cantidad; i++)
     {
@@ -59,7 +60,7 @@ void pcVieja(compu* compus, int cantidad){
     
 
 };
-void pcMasterRaise(compu* compus, int cantidad){
+void mostrarMasVeloz(compu* compus, int cantidad){
  int indicePcMaster = 0;
     for (int i = 0; i < cantidad; i++)
     {
